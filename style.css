@@ -12,6 +12,12 @@
     margin: auto;
 }
 
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /* navbar styling start */
 
 .navbar{
