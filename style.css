@@ -12,12 +12,6 @@
     margin: auto;
 }
 
-a:visited {
-  color: maroon;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 /* navbar styling start */
 
 .navbar{
@@ -27,12 +21,12 @@ a:visited {
     padding: 30px, 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background: crimson;
+    background:  yellow;
 }
 
 .navbar .sticky{
     padding: 15px, 0;
-    background: crimson;
+    background: yellow;
 }
 
 .navbar .max-width{
@@ -42,7 +36,7 @@ a:visited {
 }
 
 .navbar .logo a{
-    color: white;
+    color:#FF4500;
     font-size: 35px;
     font-weight: 600;
 }
@@ -53,7 +47,7 @@ a:visited {
 }
 
 .navbar .sticky .logo a span{
-    color: white;
+    color:  green;
 }
 
 .navbar .menu li{
@@ -62,7 +56,7 @@ a:visited {
 }
 
 .navbar .menu li a{
-    color: white; 
+    color: #FF4500; 
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -89,7 +83,9 @@ a:visited {
     display: none;
 }
 
-
+a:visited {
+    color: purple;
+  }
 
 
 /* Home section styling */
@@ -129,34 +125,45 @@ a:visited {
 }
 
 .home .home-content .text-3 span{
-    color: crimson;
+    color: yellow;
     font-weight: 500;
 }
 
 .home .home-content a{
     display: inline-block;
-    background: crimson;
-    color: white;
+    background: yellow;
+    color: #FF4500;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 35px;
-    border: 2px solid crimson;
+    border: 2px solid yellow;
     transition: all 0.3s ease;
 }
 
 .home .home-content a:hover{
-    color: crimson;
-    background: none;
+    color: yellow;
+    background: black;
 }
 
 
 
 
-/* styling similar to all */
+/* ------------- styling similar to all ------------- */
 
 section{
     padding: 100px 0;
+}
+
+.about .services .skills{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content, .projects .proj-content, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 section .title{
@@ -185,7 +192,7 @@ section .title::after{
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #FF4500;
     padding: 5px;
     background: white;
     transform: translateX(-50%);
@@ -196,19 +203,8 @@ section .title::after{
 
 /* about section styling */
 
-.about, .services{
-    font-family: 'Poppins', sans-serif;
-}
-
 .about .title::after{
     content: "who i am";
-}
-
-.about .about-content, .projects .proj-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .about .about-content .left{
@@ -227,7 +223,7 @@ section .title::after{
 }
 
 .about .about-content .right .text{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -238,24 +234,26 @@ section .title::after{
 
 .about .about-content .right p{
     text-align: justify;
+    font-size: 23px;
 }
+
 
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
-    color: white;
+    background: yellow;
+    color: #FF4500;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     font-weight: 500;
     border-radius: 35px;
-    border: 2px solid crimson;
+    border: 2px solid black;
     transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover{
-    color: crimson;
-    background: none;
+    color: white;
+    background: #FF4500;
 }
 
 
@@ -266,7 +264,7 @@ section .title::after{
 
 .projects{
     background: black;
-    color: white;
+    color: yellow;
 }
 
 .projects .title::before{
@@ -279,7 +277,7 @@ section .title::after{
 }
 
 .projects .proj-content .card{
-    width: calc(33% - 20px);
+    width: calc(25% - 20px);
     background: #222;
     text-align: center;
     border-radius: 10px;
@@ -287,7 +285,7 @@ section .title::after{
     cursor: pointer;
 }
 .projects .proj-content .card:hover{
-    background: crimson;
+    background: yellow;
 }
 
 .projects .proj-content .card .box{
@@ -300,12 +298,12 @@ section .title::after{
 
 .projects .proj-content .card i{
     font-size: 75px;
-    color: crimson;
+    color: yellow;
     transition: color 0.3s ease;
 }
 
 .projects .proj-content .card:hover i{
-    color: white;
+    color: black;
 }
 
 .projects .proj-content .card .text{
@@ -314,6 +312,184 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+.projects .proj-content .card .box p{
+    color: yellow;
+    font-size: 20px;
+}
+
+.projects .proj-content .card:hover .box p{
+    color: black;
+}
+
+
+/* skills section styling */
+
+.skills .title::after{
+    content: "what i know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 10px);
+    font-size: 25px;
+}
+
+.skills .skills-content .left .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 20px;
+} 
+
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.skills .skills-content .right span{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.skills .skills-content .right .line{
+    height: 10px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #4D4DDB;
+}
+
+.skills-content .right .fed::before{
+    width: 90%;
+}
+
+.skills-content .right .bed::before{
+    width: 70%;
+}
+
+.skills-content .right .lead::before{
+    width: 100%;
+}
+
+.skills-content .right .adbphoto::before{
+    width: 90%;
+}
+
+.skills-content .right .adbilus::before{
+    width: 60%;
+}
+
+.skills-content .right .adbxd::before{
+    width: 75%;
+}
+
+.skills-content .right .figma::before{
+    width: 80%;
+}
+
+.skills-content .right .sketch::before{
+    width: 60%;
+}
+
+/* left column soft skills */
+
+/* .skills .skills-content .left .bars{
+    margin-bottom: 20px;
+} 
+
+.skills .skills-content .left .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.skills .skills-content .left span{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.skills .skills-content .left .line{
+    height: 10px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .left .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #4D4DDB;
+}
+
+.skills-content .right .fed::before{
+    width: 90%;
+}
+
+.skills-content .right .bed::before{
+    width: 70%;
+}
+
+.skills-content .right .lead::before{
+    width: 100%;
+}
+
+.skills-content .right .adbphoto::before{
+    width: 90%;
+}
+
+.skills-content .right .adbilus::before{
+    width: 60%;
+}
+
+.skills-content .right .adbxd::before{
+    width: 75%;
+}
+
+.skills-content .right .figma::before{
+    width: 80%;
+}
+
+.skills-content .right .sketch::before{
+    width: 60%;
+} */
+
+
+
+
+/* certificates section */
+
+.certificates{
+    background: black;
+    color: yellow;
+    height: 950px;
+}
+
+.certificates .title::before{
+    background: white;
+}
+
+.certificates .title::after{
+    background: black;
+    content: "design courses";
+}
+
+.certificates .certimg{
+   position: absolute;
+}
 
 
 
